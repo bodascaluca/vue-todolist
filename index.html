@@ -18,6 +18,12 @@
 
         <div class="container">
 
+
+            <div class="section">
+                <input type="text" placeholder="Aggiungi smemorando" v-model="newtodo">
+                <button  @click="addtodo" >Bravo lascia che te lo ricordi io</button>
+            </div>
+
             <ul>
                 <li v-for="(item, index) in todolist" :class="item.done ? 'sbarra' : ''">
                     {{ item.todo }} 
