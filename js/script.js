@@ -44,7 +44,7 @@ const app = new Vue({
     methods:{
        remove:function(index){
            console.log("remove", index)
-           this.todolist.slice(index, 1);
+           this.todolist.splice(index, 1);
        }
         },
     });
