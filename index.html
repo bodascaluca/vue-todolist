@@ -20,8 +20,8 @@
 
 
             <div class="section">
-                <input type="text" placeholder="Aggiungi smemorando" v-model="newtodo">
-                <button  @click="addtodo" >Bravo lascia che te lo ricordi io</button>
+                <input type="text" placeholder="Aggiungi smemorando" @keyup.enter="addtodo" v-model="newtodo"  >
+                <button @click="addtodo" >Bravo lascia che te lo ricordi io</button>
             </div>
 
             <ul>
