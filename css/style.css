@@ -1,0 +1,22 @@
+/* RESET  */
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 3rem auto;
+    border: 1px solid black;
+}
+
+ul li{
+    padding: 1.2rem;
+    list-style: none;
+}
+
+.sbarra{
+    text-decoration:line-through ;
+}
+
