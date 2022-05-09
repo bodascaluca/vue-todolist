@@ -48,15 +48,20 @@ const app = new Vue({
            console.log("remove", index)
            this.todolist.splice(index, 1);
        },
+
        addtodo:function(){
         const newtodo = {
             todo:this.newtodo,
             // done:this.newdone,
         }
-        
         this.todolist.push(newtodo);
-
         this.newtodo = "";
+       },
+
+       toogle:function(index){
+
+           const clickedtodo = this.todolist[index];
+           clickedtodo.done = !clickedtodo.done;
        },
 
     },
