@@ -25,23 +25,26 @@ const app = new Vue({
         todolist: [
           {
               todo:"Fare pulizia in casa",
-              dono:"false",
+              done:true,
           },
 
           {
             todo:"Chiamare dentista",
-            dono:"false",
+            done:false,
           },
 
           {
             todo:"Ricordarsi recap",
-            dono:"false",
+            done:false,
           },
 
         ],
-        sbarra: "sbarra",
+
     },
     methods:{
-       
+       remove:function(index){
+           console.log("remove", index)
+           this.todolist.slice(index, 1);
+       }
         },
     });
